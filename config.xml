@@ -64,6 +64,8 @@
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-navigation href="*" />
+  <allow-intent href="*" />
+  <access origin="*" />
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
