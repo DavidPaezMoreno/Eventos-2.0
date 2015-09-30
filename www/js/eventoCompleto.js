@@ -88,12 +88,12 @@ function CrearEvento(){
     */
 	eventoHTML+='<div class="tituloEventoCompleto">'+ jsonGlobal[0].evento.titulo +'</div>';
 	eventoHTML+='<div class="tituloEventoCompleto notFixed">'+ jsonGlobal[0].evento.titulo +'</div>';
-	eventoHTML+='<div class="titulosEvento"><img src="img/iconos/location.png">  Lugar del Evento</div>'
-	eventoHTML+='<div class="lugarEvento"><div class="lugar">'+jsonGlobal[0].evento.lugar+'</div><div id="map"></div><div class="direccion">'+jsonGlobal[0].evento.direccion+'</div></div>'
+	eventoHTML+='<div class="titulosEvento"><img src="img/iconos/location.png">  Lugar del Evento</div>';
+	eventoHTML+='<div class="lugarEvento"><div class="lugar">'+jsonGlobal[0].evento.lugar+'</div><div id="map"></div><div class="direccion">'+jsonGlobal[0].evento.direccion+'</div></div>';
 	
 	///Comprobamos si las dos fechas son iguales para que no sea un rango entre euna misma fecha
 	if(timeConverter(jsonGlobal[0].evento.fechaInicio) == timeConverter(jsonGlobal[0].evento.fechaConclusion)){
-		eventoHTML+='<div class="rangoFechasEvento">'+ timeConverter(jsonGlobal[0].evento.fechaInicio) +'</div>'
+		eventoHTML+='<div class="rangoFechasEvento">'+ timeConverter(jsonGlobal[0].evento.fechaInicio) +'</div>';
 	}else{
 		eventoHTML+='<div class="rangoFechasEvento"><div class="rango fechaInicio">'+timeConverter(jsonGlobal[0].evento.fechaInicio)+'</div>';
 		eventoHTML+='<div class="rango separadorFecha">-</div><div class="rango fechaFin">'+timeConverter(jsonGlobal[0].evento.fechaConclusion)+'</div></div>';
@@ -109,7 +109,7 @@ function CrearEvento(){
 		jsonGlobal[0].evento.ligasRelacionadas.forEach(function(entry){
 			eventoHTML+='<div class="ligaRelacionada">'+entry.urlLiga+'</div>';
 		});
-		eventoHTML+='</div>'
+		eventoHTML+='</div>';
 	}
 
 	eventoHTML+='<a href="https://www.facebook.com/sharer/sharer.php?u='+ urlEvento +'"><img class ="facbookShareButtton" src="img/iconos/Facebook_Share.png" alt=""></a>';
