@@ -172,8 +172,8 @@
 		 	error:  function(jqXHR, textStatus, errorThrown)
 		 	{
 		 		$("#contenedorEventos").empty();
-		 		$('#contenedorEventos').append("<div class='advert_msg'><img src='img/sad_face.png'</img> </br> Lo sentimos se ha producido un error al cargar los eventos. Revise su conexion a intenet y vuelva a intentar. / "+ textStatus +" / "+ jqXHR +"</div>");
-		 		$('.iconMenu').css("pointer-events", "none");
+		 		$('#contenedorEventos').append("<div class='advert_msg'><img src='http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-glossy-blue-orbs-icons-symbols-shapes/016867-3d-glossy-blue-orb-icon-symbols-shapes-smiley-sad.png'</img> </br> Lo sentimos se ha producido un error al cargar los eventos. Revise su conexion a intenet y vuelva a intentar. / "+ textStatus +" / "+ jqXHR +"</div>");
+		 		$('.iconMenu').css("pointer-events", "none"); //  img/sad_face.png
 			}
 		});
 
