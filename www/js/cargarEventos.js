@@ -2,7 +2,7 @@
 	var globalData;
 	
 	$( document ).ready(function() {
-		var UrlMyJson= 'http://www.uanl.mx/utilerias/json/eventos.php';
+		var UrlMyJson= 'http://plus-soft.com/ProyectoUANL_pruebas/jsonEventos.php';
 		//var UrlMyJson= 'http://provisionalobjetos.uanl.mx/pruebaphp.php';
 		var datosJson;
 		
