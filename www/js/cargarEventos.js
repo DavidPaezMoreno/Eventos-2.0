@@ -172,7 +172,7 @@
 		 	error:  function(jqXHR, textStatus, errorThrown)
 		 	{
 		 		$("#contenedorEventos").empty();
-		 		$('#contenedorEventos').append("<div class='advert_msg'><img src='img/sad_face.png'</img> </br> Lo sentimos se ha producido un error al cargar los eventos. Revise su conexion a intenet y vuelva a intentar.</div>");
+		 		$('#contenedorEventos').append("<div class='advert_msg'><img src='img/sad_face.png'</img> </br> Lo sentimos se ha producido un error al cargar los eventos. Revise su conexion a intenet y vuelva a intentar. "+ textStatus +"</div>");
 		 		$('.iconMenu').css("pointer-events", "none");
 			}
 		});
